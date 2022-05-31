@@ -101,7 +101,8 @@ export default {
       this.loading = true;
       this.feed = {};
       try {
-        const data = await fetch("https://corsproxy.io/?" + this.feedUrl, {
+        // use https://corsproxy.io/? to get around CORS issues
+        const data = await fetch("https://corsproxy.io/?" + encodeURIComponent(this.feedUrl), {
           redirect: "follow"
         });
         if (data.ok) {
