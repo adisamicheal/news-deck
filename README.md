@@ -6,7 +6,10 @@ The Fetch API was used which makes an HTTP request to servers from web browsers.
 This is a pet project for explorinng the effectieness of the fetch api.
 
 Netlify deploy link: https://news-deck.netlify.app 
+
 SPOILER ALERT: If you are opening this on a browser that has a CORS extension on, you might get a CORS error. (working to see if this can be fixed on the FE, your contributions are welcome)
+
+SPOILER ALERT fix: https://github.com/adisamicheal/news-deck/commit/2efc948bae0d9abc3b3505cc1e66e37d9eb8dd65
 ## Project setup
 ```
 npm install
