@@ -1,5 +1,9 @@
-# news-viewer
+# news-deck
+The News Deck app parses news from an XML link using rss-parser.
 
+The Fetch API was used which makes an HTTP request to servers from web browsers.
+
+This is a pet project for explorinng the effectieness of the fetch api.
 ## Project setup
 ```
 npm install
