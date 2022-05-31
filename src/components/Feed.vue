@@ -8,7 +8,7 @@
       <div class="bounce2"></div>
       <div class="bounce3"></div>
     </div>
-    <div class="search-section-container">
+    <div v-if="!loading" class="search-section-container">
       <div class="search-section">
       <div class="search">
         <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +31,7 @@
     </div>
     <p class="max-reached" v-if="maxArticleLengthReached">That's all for now 👀</p>
     <button
-      v-else
+      v-if="!maxArticleLengthReached && !loading"
       @click="loadMoreArticles"
       class="load-more">
       Load More
